@@ -1,4 +1,4 @@
-# EVI Change Terns in the Middle East from 2003 to 2018:
+# EVI Change Trends in the Middle East from 2003 to 2018:
 I created this map to tell the region stories by capture and emphasize the long-term slop of [EVI](https://en.wikipedia.org/wiki/Enhanced_vegetation_index)
 using the [harmonic regression](https://docs.google.com/document/d/1mNIRB90jwLuASO1JYas1kuOXCLbOoy1Z4NlV1qIXM10/edit) model calculated via 
 [Google Earth Engine](https://developers.google.com/earth-engine/guides/playground). 
