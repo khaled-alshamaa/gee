@@ -3,7 +3,7 @@ I created this map to tell the region stories by capture and emphasize the long-
 using the [harmonic regression](https://docs.google.com/document/d/1mNIRB90jwLuASO1JYas1kuOXCLbOoy1Z4NlV1qIXM10/edit) model calculated via 
 [Google Earth Engine](https://developers.google.com/earth-engine/guides/playground). 
 The used data source is the [MOD13Q1.006](https://developers.google.com/earth-engine/datasets/catalog/MODIS_006_MOD13Q1) Terra Vegetation Indices 
-16-Day Global 250m. Also, you can test it online [here](https://code.earthengine.google.com/9508fccb9c007c50ddb86c91ffe1f2c7).
+16-Day Global 250m.
 
 Here is a picture that worth a thousand words:
 ![evi trend stories](https://user-images.githubusercontent.com/11270404/130354551-3d1d7e6c-d251-468f-93e6-048cd1184661.jpg)
@@ -15,7 +15,7 @@ Here is a picture that worth a thousand words:
 * 3<sup>rd</sup> Story: [Drought and Water Level](#3rd-story-drought-and-water-level)
 * 4<sup>th</sup> Story: [Crises Impact on Agriculture](#4th-story-crises-impact-on-agriculture)
 
-Find below the script that I developed to generate this map:
+Find below the script that I developed to generate this map (you can test it online [here](https://code.earthengine.google.com/9508fccb9c007c50ddb86c91ffe1f2c7)):
 
 ```javascript
 // Library that includes all the utility functions for ease of use
@@ -119,7 +119,21 @@ the Free Software Foundation, either version 3 of the License, or (at your optio
 **_Disclaimer:_** This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY 
 or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
----
+### Exporting the Map to Google Drive in GeoTIFF format
+```javascript
+Export.image.toDrive({
+  image: longTermChanges,
+  maxPixels: 2e9,
+  scale: 250,
+  region: ROI.geometry().bounds(),
+  fileFormat: "GeoTIFF",
+  description: "MiddleEastEviChanges"
+});
+```
+> Check the tasks tab in the right-hand console, click the related Run button, then set required options in the pop-up dialog box:
+> - Task name (no spacies)
+> - Resolution (scale m/px, diemnsions px, and maximum dimension px)
+> - Export to: Drive, Cloud Storage, and EE Asset
 
 ### Normalized Difference Vegetation Index (NDVI):
 [NDVI](https://earthobservatory.nasa.gov/Features/MeasuringVegetation/measuring_vegetation_2.php) quantifies vegetation by measuring the difference between 
