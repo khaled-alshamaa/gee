@@ -1,8 +1,8 @@
 # EVI Change Terns in the Middle East from 2003 to 2018:
-I created this informative map to tell the region stories by capture and emphasize the long-term slop of [EVI](https://en.wikipedia.org/wiki/Enhanced_vegetation_index)
-using the [harmonic regression](https://docs.google.com/document/d/1mNIRB90jwLuASO1JYas1kuOXCLbOoy1Z4NlV1qIXM10/edit) model using 
+I created this map to tell the region stories by capture and emphasize the long-term slop of [EVI](https://en.wikipedia.org/wiki/Enhanced_vegetation_index)
+using the [harmonic regression](https://docs.google.com/document/d/1mNIRB90jwLuASO1JYas1kuOXCLbOoy1Z4NlV1qIXM10/edit) model calculated via  
 [Google Earth Engine](https://developers.google.com/earth-engine/guides/playground). 
-Used data source is the [MOD13Q1.006](https://developers.google.com/earth-engine/datasets/catalog/MODIS_006_MOD13Q1) Terra Vegetation Indices 
+The used data source is the [MOD13Q1.006](https://developers.google.com/earth-engine/datasets/catalog/MODIS_006_MOD13Q1) Terra Vegetation Indices 
 16-Day Global 250m. Also, you can test it online [here](https://code.earthengine.google.com/9508fccb9c007c50ddb86c91ffe1f2c7).
 
 Here is a picture that worth a thousand words:
