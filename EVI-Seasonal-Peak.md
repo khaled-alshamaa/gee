@@ -5,7 +5,7 @@ It calculates the [harmonic regression](https://docs.google.com/document/d/1mNIR
 then translates the phase and amplitude of the estimated model into [HSV](https://en.wikipedia.org/wiki/HSL_and_HSV) color space. 
 Please note that presented amplitude (i.e., color saturation) refers to the seasonal component not the absolute EVI value. 
 
-Used data source is the [MOD13Q1.006](https://developers.google.com/earth-engine/datasets/catalog/MODIS_006_MOD13Q1) Terra Vegetation Indices 
+The used data source is the [MOD13Q1.006](https://developers.google.com/earth-engine/datasets/catalog/MODIS_006_MOD13Q1) Terra Vegetation Indices 
 16-Day Global 250m. Here is the script that I developed to generate this [map](https://code.earthengine.google.com/46d407e057c09eb6edb8bf2f57c67fe0).
 
 ![Seasonal EVI Peak](https://user-images.githubusercontent.com/11270404/130336574-bd096dc3-85ad-48ca-9523-6fe0e7761d3e.png)
